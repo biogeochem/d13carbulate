@@ -1,7 +1,3 @@
-README
-================
-PJKA
-21/02/2020
 
 # d13carbulate
 
