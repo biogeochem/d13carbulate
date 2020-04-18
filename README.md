@@ -1,10 +1,12 @@
 
-# d13carbulate
+# d13carbulate <img src="man/figures/d13carbulate_logo.png" width="120" align="right" />
 
-This package calculates the d13C signature for all dissolved carbonate
-species within a water sample (CO2(aq), HCO3-, and CO3–) from pH, total
-DIC concentration, water temperature, and concentrations of the
-carbonate species. Check out the other package ‘carbulate’ to calculate
+This package calculates the δ<sup>13</sup>C values for all dissolved
+carbonate species within a water sample (CO2<sub>(aq)</sub>,
+HCO<sub>3</sub><sup>-</sup>, and CO<sub>3</sub><sup>2-</sup>) from pH,
+total DIC concentration, water temperature, and concentrations of the
+carbonate species. Check out the other package
+[`carbulate`](https://github.com/paukes/carbulate) to calculate
 concentrations for all dissolved carbonate species (from DIC, pH, and
 water temperature).
 
