@@ -1,37 +1,43 @@
-
-# d13carbulate <img src="man/figures/d13carbulate_logo.png" width="120" align="right" />
+d13carbulate <img src="man/figures/d13carbulate_logo.png" width="120" align="right" />
+======================================================================================
 
 This package calculates the δ<sup>13</sup>C values for all dissolved
 carbonate species within a water sample (CO2<sub>(aq)</sub>,
 HCO<sub>3</sub><sup>-</sup>, and CO<sub>3</sub><sup>2-</sup>) from pH,
 total DIC concentration, water temperature, and concentrations of the
 carbonate species. Check out the other package
-[`carbulate`](https://github.com/paukes/carbulate) to calculate
+[`carbulate`](https://github.com/biogeochem/carbulate) to calculate
 concentrations for all dissolved carbonate species (from DIC, pH, and
 water temperature).
 
-## Parameters
+Installation
+------------
 
-d13carbulate(df, temp\_col\_C, d13C\_DIC\_col, DIC\_col\_mg.L,
-CO3\_col\_uM, HCO3\_col\_uM, CO2\_col\_uM)
+    library(devtools)
+    devtools::install_github("biogeochem/d13carbulate")
 
-df - Your dataframe with values  
-temp\_col\_C - Name of column with your measured water temperature (in
+Parameters
+----------
+
+`d13carbulate(df, temp_col_C, d13C_DIC_col, DIC_col_mg.L, CO3_col_uM, HCO3_col_uM, CO2_col_uM)`
+
+`df` - Your dataframe with values  
+`temp_col_C` - Name of column with your measured water temperature (in
 Celsius)  
-d13C\_DIC\_col Name of column with your d13C of DIC (per mille PDB)  
-DIC\_col\_mg.L Name of column that contains your measured dissolved
+`d13C_DIC_col` Name of column with your d13C of DIC (per mille PDB)  
+`DIC_col_mg.L` Name of column that contains your measured dissolved
 inorganic carbon concentration (mg C/L)  
-CO3\_col\_uM - Name of column that contains your measured/calculated
+`CO3_col_uM` - Name of column that contains your measured/calculated
 carbonate concentrations (umol C/L)  
-HCO3\_col\_uM - Name of column that contains your measured/calculated
+`HCO3_col_uM` - Name of column that contains your measured/calculated
 bicarbonate concentrations (umol C/L)  
-CO2\_col\_uM - Name of column that contains your measured/calculated
+`CO2_col_uM` - Name of column that contains your measured/calculated
 dissolved carbon dioxide concentrations (umol C/L)
 
-## Example
+Example
+-------
 
 This is how you would input this function to add the carbonate species
-to the dataframe ‘water.df’:
+to the dataframe `water.df`:
 
-water.df \<- d13carbulate(water.df, ‘Temp\_C’, ‘d13C\_DIC\_permille’,
-‘DIC\_mgC.L’, ‘calc\_CO3\_uM’, ‘calc\_HCO3\_uM’, ‘calc\_CO2\_uM’)
+`water.df <- d13carbulate(water.df, 'Temp_C', 'd13C_DIC_permille', 'DIC_mgC.L', 'calc_CO3_uM', 'calc_HCO3_uM', 'calc_CO2_uM')`
