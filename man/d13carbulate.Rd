@@ -4,11 +4,18 @@
 \alias{d13carbulate}
 \title{Calculate d13C Carbonate Species using d13C-DIC, pH, and Temperature}
 \usage{
-d13carbulate(df, temp_col_C, d13C_DIC_col, DIC_col_mg.L, CO3_col_uM,
-  HCO3_col_uM, CO2_col_uM)
+d13carbulate(
+  dat,
+  temp_col_C,
+  d13C_DIC_col,
+  DIC_col_mg.L,
+  CO3_col_uM,
+  HCO3_col_uM,
+  CO2_col_uM
+)
 }
 \arguments{
-\item{df}{Your dataframe with values}
+\item{dat}{Your dataframe with values}
 
 \item{temp_col_C}{Name of column with your measured water temperature (in celsius)}
 
@@ -25,10 +32,13 @@ d13carbulate(df, temp_col_C, d13C_DIC_col, DIC_col_mg.L, CO3_col_uM,
 \description{
 This function calculates the d13C for all dissolved inorganic carbon species given the measured pH, DIC concentration, and water temperature.
 }
+\examples{
+water.dat <- d13carbulate(water.dat, 'Temp_C', 'd13C_DIC_permille', 'DIC_mgC.L', 'calc_CO3_uM', 'calc_HCO3_uM', 'calc_CO2_uM')
+}
 \author{
 Pieter J. K. Aukes
 }
 \keyword{carbonate}
-\keyword{d13C-DIC,}
+\keyword{d13C-DIC}
 \keyword{isotopes}
-\keyword{speciation,}
+\keyword{speciation}

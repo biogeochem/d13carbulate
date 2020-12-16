@@ -19,9 +19,9 @@ Installation
 Parameters
 ----------
 
-`d13carbulate(df, temp_col_C, d13C_DIC_col, DIC_col_mg.L, CO3_col_uM, HCO3_col_uM, CO2_col_uM)`
+`d13carbulate(dat, temp_col_C, d13C_DIC_col, DIC_col_mg.L, CO3_col_uM, HCO3_col_uM, CO2_col_uM)`
 
-`df` - Your dataframe with values  
+`dat` - Your dataframe with values  
 `temp_col_C` - Name of column with your measured water temperature (in
 Celsius)  
 `d13C_DIC_col` Name of column with your d13C of DIC (per mille PDB)  
@@ -38,6 +38,6 @@ Example
 -------
 
 This is how you would input this function to add the carbonate species
-to the dataframe `water.df`:
+to the dataframe `water.dat`:
 
-`water.df <- d13carbulate(water.df, 'Temp_C', 'd13C_DIC_permille', 'DIC_mgC.L', 'calc_CO3_uM', 'calc_HCO3_uM', 'calc_CO2_uM')`
+`water.dat <- d13carbulate(water.dat, 'Temp_C', 'd13C_DIC_permille', 'DIC_mgC.L', 'calc_CO3_uM', 'calc_HCO3_uM', 'calc_CO2_uM')`
