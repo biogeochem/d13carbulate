@@ -1,7 +1,7 @@
 Package: d13carbulate
 Type: Package
 Title: d13carbulate - Calculate d13C Signature for Carbonate Species in a Water Samples
-Version: 0.1.1
+Version: 0.1.2
 Author: Pieter J. K. Aukes
 Maintainer: PJKA <paukes@uwaterloo.ca>
 Description: This package calculates the d13C signature for all dissolved carbonate species within

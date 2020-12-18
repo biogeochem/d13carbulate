@@ -33,7 +33,16 @@ d13carbulate(
 This function calculates the d13C for all dissolved inorganic carbon species given the measured pH, DIC concentration, and water temperature.
 }
 \examples{
-water.dat <- d13carbulate(water.dat, 'Temp_C', 'd13C_DIC_permille', 'DIC_mgC.L', 'calc_CO3_uM', 'calc_HCO3_uM', 'calc_CO2_uM')
+water.dat <- data.frame(
+Sample = c('Lake A', 'Lake B', 'Lake C'),
+DIC_mgC.L = c(1.2,8.5,15),
+Temp_C = c(12,15,18),
+d13C_DIC = c(-22, -15, 1),
+calc_CO2_uM = c(30.6, 100.6, 1108),
+calc_HCO3_uM = c(69.2, 606.8, 140.7),
+calc_CO3_uM = c(0.015, 0.357, 0.0018))
+
+water.dat <- d13carbulate(water.dat, 'Temp_C', 'd13C_DIC', 'DIC_mgC.L', 'calc_CO3_uM', 'calc_HCO3_uM', 'calc_CO2_uM')
 }
 \author{
 Pieter J. K. Aukes
